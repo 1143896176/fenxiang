@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="icon" href="img/logo.png">
+    <title>首页</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body {
+            height: 100%;
+
+        }
+
+        div {
+            moz-user-select: -moz-none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .body {
+            padding-top: 1px;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 786px;
+            height: 100%;
+            background: url("img/bg.png");
+            background-size: cover;
+        }
+
+        .invitation {
+            margin-top: 10px;
+            height: 10%;
+            max-height: 65px;
+            background: url("img/title.png") no-repeat center;
+            background-size: contain;
+        }
+
+        .English {
+            height: 5%;
+            max-height: 20px;
+            background: url("img/title_1.png") no-repeat center;
+            background-size: contain;
+            margin: 3%;
+        }
+
+        .title2 {
+            height: 5%;
+            max-height: 20px;
+            background: url("img/title_2.png") no-repeat center;
+            background-size: contain;
+            margin: 3%;
+        }
+
+        .a {
+            margin: 0 auto;
+        }
+
+        .box1 {
+            width: 35%;
+            border: 1px solid #c3a872;
+        }
+
+        .box2 {
+            margin-top: 5%;
+            width: 90%;
+            height: 90%;
+            border: 1px solid #c3a872;
+        }
+
+        .context {
+            margin-top: 20px;
+            width: 90%;
+            height: 40%;
+            max-height: 250px;
+            border: 1px solid #c3a872;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .b {
+
+            width: 50%;
+            height: 10px;
+            position: absolute;
+            top: -6px;
+            left: 25%;
+            background: #373737;
+        }
+        .b >div{
+        height:10px;
+        width: 10px;
+        background: #c3a872;
+        transform: rotate(45deg);
+        position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<div class="body">
+    <div class="invitation">
+
+    </div>
+    <div class="English">
+
+    </div>
+    <p class="title2"></p>
+    <div class="box1 a">
+        <div class="box2 a">
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="context a">
+        <div class="b a">
+            <div class="b1"></div>
+            <div class="b2" style="right: 0"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('.box1').css({
+            height: $('.box1').width() + "px"
+        })
+
+
+    })
+</script>
+</html>
