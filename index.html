@@ -16,7 +16,6 @@
 
         html, body {
             height: 100%;
-
         }
 
         div {
@@ -28,7 +27,6 @@
             -ms-user-select: none;
             user-select: none;
         }
-
         .body {
             padding-top: 1px;
             width: 100%;
@@ -38,7 +36,6 @@
             background: url("img/bg.png");
             background-size: cover;
         }
-
         .invitation {
             margin-top: 10px;
             height: 10%;
@@ -46,7 +43,6 @@
             background: url("img/title.png") no-repeat center;
             background-size: contain;
         }
-
         .English {
             height: 5%;
             max-height: 20px;
@@ -54,7 +50,6 @@
             background-size: contain;
             margin: 3%;
         }
-
         .title2 {
             height: 5%;
             max-height: 20px;
@@ -77,20 +72,19 @@
             width: 90%;
             height: 90%;
             border: 1px solid #c3a872;
+            box-sizing: border-box;
         }
 
         .context {
-            margin-top: 20px;
+            margin-top: 10%;
             width: 90%;
-            height: 40%;
+            height: 45%;
             max-height: 250px;
             border: 1px solid #c3a872;
             border-radius: 10px;
             position: relative;
         }
-
         .b {
-
             width: 50%;
             height: 10px;
             position: absolute;
@@ -105,21 +99,43 @@
         transform: rotate(45deg);
         position: absolute;
         }
+        .warp{
+        margin: 0 auto;
+        margin-top: 10px;
+       padding-left:  20px;
+       padding-right: 10px;
+        height: 90%;
+        line-height: 25px;
+        overflow-y: scroll;
+        color: #c3a872;;
+        }
+        .warp::-webkit-scrollbar {/*滚动条整体样式*/
+            width: 9px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 0px;
+        }
+        .warp::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            background: url("img/scroll-bar.png") no-repeat center;
+        }
+        .warp::-webkit-scrollbar-track {/*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0);
+            border-radius: 0;
+            background: transparent;
+        }
 
     </style>
 </head>
 <body>
 <div class="body">
     <div class="invitation">
-
     </div>
     <div class="English">
-
     </div>
     <p class="title2"></p>
     <div class="box1 a">
         <div class="box2 a">
-            <img src="" alt="">
+            <img class="a" width="90%" src="img/erweima.png" alt="" style="margin-top: 5%;display: block">
         </div>
     </div>
     <div class="context a">
@@ -127,6 +143,29 @@
             <div class="b1"></div>
             <div class="b2" style="right: 0"></div>
         </div>
+        <div class="warp">
+
+            ont-family 可以把多个字体名称作为一个“回退”系统来保存。如果浏览器不支持第一个字体，则会尝试下一个。也就是说，font-family 属性的值是用于某个元素的字...
+
+            基本信息 语法 参数 说明 示例 用法 浏览器支持
+
+            baike.baidu.com/
+
+            FontFamily 看这里就够了 - CSDN博客
+            2018年4月20日 - TextView中字体设置 typeface 一、配置设置 代码方式设置 fontFamily 文字如何实现加粗、斜体? 三者之间的关系 自定义字体 参考: TextView中字体设置 ...
+            https://blog.csdn.net/yuanxw44...  - 百度快照
+            CSS font-family常见中文字体对应的英文名称 « 张鑫旭-鑫空间-...
+            2017年3月25日 - 虽然一些常见中文字体,例如“宋体”,“微软雅黑”等,直接使用中文名称作为CSS font-family的属性值也能生效,但我们一般都不使用中文名称,而是使用英文...
+            https://www.zhangxinxu.com/wor...  - 百度快照
+            CSS属性:font-family - CSDN博客
+            2017年5月3日 - CSS font-family示例: 源码如下:                   #p1{         font-family: Arial...
+            https://blog.csdn.net/bwf_erg/...  - 百度快照
+            web页面font-family显示 - 屏幕后的无奈 - 博客园
+            2018年4月30日 - font-family属性很简单,直接写在css或style样式中即可。 如: font-family: "Microsoft YaHei"; 但是如果希望电脑能正确的显示我们设置的字体,必须电脑...
+            https://www.cnblogs.com/gwcyul...  - 百度快照
+
+        </div>
+
     </div>
 </div>
 </body>
@@ -136,8 +175,6 @@
         $('.box1').css({
             height: $('.box1').width() + "px"
         })
-
-
     })
 </script>
 </html>
