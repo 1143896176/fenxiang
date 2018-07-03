@@ -79,7 +79,7 @@
             margin-top: 10%;
             width: 90%;
             height: 45%;
-            max-height: 250px;
+            /*max-height: 250px;*/
             border: 1px solid #c3a872;
             border-radius: 10px;
             position: relative;
@@ -164,6 +164,11 @@
 <script>
     $(function () {
         $('.box1').css({height: $('.box1').width() + "px" })
+        var a=$(window).height()-$('.context').offset().top
+        console.log(a)
+        $('.context').css({
+        height:a-20+"px"
+        })
     })
 </script>
 </html>
